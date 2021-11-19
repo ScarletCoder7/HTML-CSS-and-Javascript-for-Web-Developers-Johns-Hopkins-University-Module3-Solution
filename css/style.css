@@ -1,0 +1,304 @@
+
+body{
+    font-size: 16px;
+    color: black;
+    background-color: white;  /* Dark Red*/
+    font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav{
+    background-color:#909497;
+    border-radius:0;
+    border: 0;
+    border-radius: 0px;
+}
+#logo-img {
+    background: url("../images/bowl1.jpg") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0px;
+}
+.navbar-brand{
+    padding-top:65px;
+}
+.navbar-brand h1{
+    font-family: 'Lora', serif;
+    color: black;
+    font-size:1.5em;
+    font-weight:bold;
+    margin-top:0px;
+    margin-bottom:0px;
+    line-height:.75em;
+    text-shadow: 1px 1px 1px #222;  /*text-shadow: h-shadow v-shadow blur-radius color | none |                                                                             initial | inherit;*/
+}
+.navbar-brand a, .navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+.navbar-brand p{            /*Kosher cert*/
+    text-transform: uppercase;
+    color: #000;
+    margin-top:15px;
+    font-size: .7em;
+}
+.navbar-brand p span{
+    vertical-align:middle;
+}
+#nav-list{
+    margin-top:10px;
+    background-color:white;
+}
+#nav-list a{
+    color: #951c49; /*deep pink*/
+    text-align:center;  
+}
+#nav-list a:hover{
+    background-color:#E7E7E7;  /* Gray*/
+}
+#nav-list a span{
+    font-size:1.8em;  /* increasing the size of glyphicon */
+}
+#nav-list li{
+    border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #61122f; /*brown*/
+}
+.navbar-header button.navbar-toggle{
+    clear:both; /*So that the entire navbar part fits within the navbr box which depends upon the navbar-toggle*/
+    margin-top: -30px; /* Reducing the size of navbar portion*/
+}
+
+/*Home page*/
+section article{
+      
+    border: 2px solid black;
+    padding: 15px;
+    background-color: #909497;
+}
+.our-menu{
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 65px;
+}
+
+/*footer*/
+.panel-footer{  /*overriding a bootstrap css class*/
+    margin-top:30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color:#222; /*dark gray*/
+    border-top:0;
+    color:white;
+}
+.panel-footer div.row{
+    margin-bottom:35px;
+}
+#hours, #address{
+    line-height: 2;
+}
+#hours > span, #address > span{
+    font-size: 1.3em;
+} 
+#address p{
+    color: #557c3e;
+    font-size:.8em; /*Decreasing the height*/
+    line-height:1.8;
+}
+#testimonials{
+    font-style:italic;
+}
+#testimonials p:nth-child(2){
+    margin-top:25px;
+}
+/*End Of Home page*/
+
+/***********Menu Category Page**********/
+
+.category-tile{ /*overriding bootstrap*/
+    position: relative;
+    border: 2px solid #3f0c1f;
+    width: 203px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:1.2em;
+    background-color: #000; /*black*/
+    color: #fff; /*white*/
+    opacity: .8;
+}
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc; /*dull white*/
+}
+#menu-categories-title + div{  /* next div sibling to id="menu-categories-title"*/ 
+    margin-bottom:50px;
+}
+/*End of Menu category page*/
+
+/*Single category Page*/
+.menu-item-tile{
+    margin-bottom:25px;
+}
+.menu-item-tile hr{
+    width:80%;
+}
+.menu-item-tile .menu-item-price{
+    font-size:1.1em;
+    text-align:right;
+   /* margin-top:-15px;
+    margin-right:-15px;*/
+}
+.menu-item-tile .menu-item-price span{
+    font-size:.6em;
+}
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3f0c1f; /*Dark Pink*/
+    overflow: hidden;
+    padding:0;
+    margin-right:-15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width:250px;    /*maximum width similar to the width of the img tag in single-category page class=".menu-item-photo. So that the image doesn't exceeds this Width. */ 
+}
+.menu-item-photo div{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:80px;
+    background-color: #557c3e; /*green*/
+    text-align:center;
+}
+.menu-item-description{
+    padding-right: 30px;
+}
+h3.menu-item-title{
+    margin: 0 0 10px; /*top right bottom*/
+}
+.menu-item-details{
+    font-size:.9em;
+    font-style:italic;
+}
+/*End of single category page*/
+
+/*********Large Device Only***********/
+@media (min-width:1200px){
+    .jumbotron section{
+        background-color: #909497;
+    }
+    .navbar-brand h1{
+        font-size: 1.8em;
+    }
+}
+
+/*********Medium Device Only***********/
+@media (min-width:992px) and (max-width:1199px){
+    #logo-img{
+        background: url("../images/bowl1%20(md).gif") no-repeat;
+        width: 100px;
+        height: 100px;
+        border: 4px 4px 4px 0px;
+    }
+    .container .jumbotron{
+        
+    }
+    .navbar-brand{
+        padding-top:55px;
+    }
+}
+
+/*********Small Device Only***********/
+@media (min-width:768px) and (max-width:991px){
+    
+    #logo-img{
+        background: url("../images/bowl1%20(sm).gif") no-repeat;
+        width: 80px;
+        height: 80px;
+        border: 3px 3px 3px 0px;
+    }
+
+    .container .jumbotron{
+        
+    }
+    .navbar-brand{
+        padding-top:45px;
+    }
+    
+}
+
+/*********Extra Small Device Only***********/
+@media (max-width: 767px){
+    #logo-img{
+        background: url("../images/bowl1.jpg") no-repeat;
+        width: 100px;
+        height: 100px;
+        border: 5px 5px 5px 0px;
+    }
+    .navbar-brand{
+        padding-top:25px;  /*decreasing the padding*/
+        height:80px;
+    }
+    .navbar-brand h1{  /*Restaurant Name*/
+        padding-top:10px;   /*decreasing the padding*/
+        font-size:5vw;  /* 1% of viewport width*/ /* vw is responsive */
+    }
+    .navbar-brand p{  /* Kosher Certification*/
+        font-size:.6em;
+        margin-top:12px;    /* smaller margin-top*/
+    }
+    .navbar-brand p img{  /* *k logo */
+        height:20px;
+    }
+    #collapsable-nav a{ /*collapsable-nav menu glyph */
+        font-size:1.2em; /* previous body font-size: 16px * 1.2 */
+    }
+    #collapsable-nav a span{    /*collapsable-nav glyphicon */
+        font-size: 1em; /* size of glyphicon will be that of the parent font size that is it will not change */
+    }
+    /*End of header*/
+    
+    .main-content{
+        margin-left:50px;
+    }
+    
+    /*Footer*/
+    .panel-footer section{
+        margin-bottom:30px;
+        text-align:center;
+    }
+    .pane-footer section:nth-child(3){
+        margin-bottom:0; /*margin already exists onthe whole row */
+    }
+    .panel-footer section hr{
+        width: 50%;
+    } 
+    /*End Of Footer*/
+}
+
+/*********Extra Extra Small Device Only   iphone4***********/
+@media (max-width: 479px){
+    
+    .navbar-brand h1{
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+    #menu-tile, #specials-tile, #map-tile{
+        width:280px;
+        margin: 0 auto 15px;
+    } 
+    .col-xxs-12{    /*creating our own Extra Extra Small 12 Grid System  */
+        width: 100%;    /*Copying each of them from col-xs-12 bootstrap.css*/
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+    }
+}
