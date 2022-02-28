@@ -57,9 +57,9 @@ body{
 #nav-list a span{
     font-size:1.8em;  /* increasing the size of glyphicon */
 }
-#nav-list li{
+/*#nav-list li{
     border: 1px solid black;
-}
+}*/
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
     border: 1px solid #61122f; /*brown*/
